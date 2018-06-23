@@ -64,6 +64,7 @@
 			if (!empty($id)) {
 				$this->db->where('id != '.$id);
 			}
+			
 			$query =$this->db->get();
 			return $query->result_array();
 		}
